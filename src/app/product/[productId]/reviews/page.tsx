@@ -1,12 +1,8 @@
-export default async function ProductReviews({
-  params,
-}: {
-  params: Promise<{ productId: string; reviewId: string }>;
-}) {
-  const { productId, reviewId } = await params;
-  return (
-    <h1>
-      Review {reviewId} Product {productId}
-    </h1>
-  );
+export default function ProductReviews() {
+    return (
+        <div>
+            <h1>Product Reviews</h1>
+            <p>This page will display reviews for a specific product.</p>
+        </div>
+    );
 }

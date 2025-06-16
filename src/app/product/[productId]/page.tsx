@@ -1,5 +1,10 @@
-export default function ProductDetails(){
-    return <h1>
-        display product details
-    </h1>
+export default async function ProductDetails({
+    params,
+}:{
+    params:Promise<{productId:string}>;
+}
+) 
+{
+    const productId = (await params).productId;
+    return <h1>Details about Product {productId}</h1>
 }

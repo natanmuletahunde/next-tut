@@ -1,13 +1,15 @@
-import Link from 'next/link';
-
-export default function Home(){
-
-    return (
-        <>
-        <h1>Welcome Home!</h1>
-        <Link href="/counter">Counter</Link>
-        <Link href="/login">Login</Link>
-
-        </>
-    )
+import { Metadata } from "next";
+export const metadate: Metadata = {
+  title: {
+    absolute: "Marketing",
+  },
+};
+export default async function Marketing() {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  return (
+    <>
+      <h1>Welcome To Marketing page!</h1>
+    </>
+  ); // Simulating a delay
 }
+

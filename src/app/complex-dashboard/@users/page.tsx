@@ -1,7 +1,9 @@
+import { Card } from "../../../components/card";
+
 export default function UsersAnalytics() {
     return (
-    <h1>
+    <Card>
         Users Analytics Page
-    </h1>
+    </Card>
     )
 }

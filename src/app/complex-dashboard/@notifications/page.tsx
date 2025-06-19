@@ -1,9 +1,9 @@
+import { Card } from "../../../components/card";
+
 export default function Notification() {
     return (
-        <div>
-            <h1>
+        <Card>
                 Notification Page
-            </h1>
-        </div>
+        </Card>
     )
 }
